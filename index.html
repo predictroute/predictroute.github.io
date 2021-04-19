@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+      <!-- Basic Page Needs
+	   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <meta charset="utf-8">
+      <title>PredictRoute: Network Path Prediction</title>
+      <meta name="description" content="">
+      <meta name="author" content="">
+
+        <!-- Mobile Specific Metas
+	     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	  <!-- FONT
+	       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+	    <!-- CSS
+		 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	    <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
+	    <link rel="stylesheet" href="{{ url_for('static', filename='css/skeleton.css') }}">
+	    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+	      <!-- Favicon
+		   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	      <!--<link rel="icon" type="image/png" href="images/favicon.png">-->
+
+  </head>
+  <body>
+
+      <!-- Primary Page Layout
+	   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <div class="container">
+	<section class="header">
+	  <div>
+	    <img class="logo" src="{{ url_for('static', filename='images/logo-dynasnip.jpg') }}" width="75"/>
+	    <h1 class="title">PredictRoute</h1>
+	  </div>
+	  <h4 class="subtitle">Network Path Prediction</h4>
+	</section>
+	<section class="summary">
+	  <p style="text-align:center;">
+	    PredictRoute uses a combination of control plane and data plane measurements to build probabilistic models of routing.
+	    Using these models, PredictRoute can predict un-measured network paths accurately.
+	  </p>
+	  <p style="text-align:center;">
+	    Query PredictRoute's REST API for predicting paths from arbitrary sources and destinations on the Internet. We also
+	    provide several helpful tools for the analysis of inter-domain routing. A description of
+	    the API and its uses are listed in the <a href="http://www.predictroute.com/documentation">documentation</a>.
+	  </p>
+	</section>
+	<section class="code-links">
+	  <a href="http://www.predictroute.com/documentation" class="button">
+	    Documentation
+	  </a>
+	  <a href="" class="button">
+	    Paper
+	  </a>
+	  <a href="" class="button">
+	    Code
+	  </a>
+
+	</section>
+      </div>
+
+      <!-- End Document
+	   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  </body>
+  </html>
