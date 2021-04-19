@@ -18,9 +18,9 @@
 
 	    <!-- CSS
 		 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	    <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
-	    <link rel="stylesheet" href="{{ url_for('static', filename='css/skeleton.css') }}">
-	    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+	    <link rel="stylesheet" href="static/css/normalize.css">
+	    <link rel="stylesheet" href="static/css/skeleton.css">
+	    <link rel="stylesheet" href="static/css/styles.css">
 
 	      <!-- Favicon
 		   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -34,7 +34,7 @@
       <div class="container">
 	<section class="header">
 	  <div>
-	    <img class="logo" src="{{ url_for('static', filename='images/logo-dynasnip.jpg') }}" width="75"/>
+	    <img class="logo" src="static/images/logo-dynasnip.jpg" width="75"/>
 	    <h1 class="title">PredictRoute</h1>
 	  </div>
 	  <h4 class="subtitle">Network Path Prediction</h4>
@@ -53,11 +53,11 @@
 	  <p>
 	    The response includes five most-likely prefix-level paths between
 	    X and Y and their likelihoods.<br>
-	    Example: <a href="http://www.predictroute.com/api/24.50.160.80/80.252.96.9">
-	      http://www.predictroute.com/api/24.50.160.80/80.252.96.9</a>
+	    Example: <a href="http://predictroute.eastus.cloudapp.azure.com/api/24.50.160.80/80.252.96.9">
+	      http://predictroute.eastus.cloudapp.azure.com/api/24.50.160.80/80.252.96.9</a>
 	    for predicting paths from 24.50.160.80 to 80.252.96.9.
-	    To pretty print the same JSON response, use: <a href="http://www.predictroute.com/paths/24.50.160.80/80.252.96.9">
-	      http://www.predictroute.com/paths/24.50.160.80/80.252.96.9</a>
+	    To pretty print the same JSON response, use: <a href="http://predictroute.eastus.cloudapp.azure.com/paths/24.50.160.80/80.252.96.9">
+	      http://predictroute.eastus.cloudapp.azure.com/paths/24.50.160.80/80.252.96.9</a>
 	  </p>
 	</section>
 	<section class="box">
@@ -65,8 +65,8 @@
 	</section>
 	<section class="summary", style="text-align:left">
 	  <p>
-	    Example: <a href="http://www.predictroute.com/api/bgp/766/8075">http://www.predictroute.com/api/bgp/766/8075</a> for predicting the AS path from ASN 766 and ASN 8075.
-	    To pretty print the path (along with names of AS hops), use: <a href="http://www.predictroute.com/paths/bgp/766/8075">
+	    Example: <a href="http://predictroute.eastus.cloudapp.azure.com/api/bgp/766/8075">predictroute.eastus.cloudapp.azure.com/api/bgp/766/8075</a> for predicting the AS path from ASN 766 and ASN 8075.
+	    To pretty print the path (along with names of AS hops), use: <a href="http://predictroute.eastus.cloudapp.azure.com/paths/bgp/766/8075">
 		http://www.predictroute.com/paths/bgp/766/8075</a>
 	  </p>	  
 	</section>
@@ -75,7 +75,7 @@
 	</section>
 	<section class="summary", style="text-align:left">
 	  <p>
-	    Example: <a href="http://predictroute.com/siblings/8074/8075">http://predictroute.com/siblings/8074/8075</a>
+	    Example: <a href="http://predictroute.eastus.cloudapp.azure.com/siblings/8074/8075">http://predictroute.eastus.cloudapp.azure.com/siblings/8074/8075</a>
 	    returns a JSON object with both ASes names and whether they are siblings (networks under the same organization).
 	  </p>
 	  
